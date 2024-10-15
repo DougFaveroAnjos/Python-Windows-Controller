@@ -23,7 +23,7 @@ while True:
     fps = 1/(tac-tic)
     tic = tac
 
-    cv2.putText(imagem, str(int(fps)), (10,70), cv2.FONT_HERSHEY_PLAIN, 3, (255,0,0), 3)
+    cv2.putText(imagem, str(int(fps)), (10,70), cv2.FONT_HERSHEY_PLAIN, 3, (255,0,255), 3)
 
     cv2.imshow("Camera", imagem)
     if cv2.waitKey(1) & 0xFF == ord('q'):
